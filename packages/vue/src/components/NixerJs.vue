@@ -1,10 +1,11 @@
 <script setup lang="ts">
   import {js} from '@nixer/js'
   import { inject } from 'vue'
+  import { NixerOptions } from '..';
 
-  const text = inject<string>('NixerOptions') ?? ''
+  const options = inject<NixerOptions>('NixerOptions') ?? {text: 'nothing provided'}
 </script>
 
 <template>
-  <h1>{{ js(text) }}</h1>
+  <h1>{{ js(options.text) }}</h1>
 </template>
