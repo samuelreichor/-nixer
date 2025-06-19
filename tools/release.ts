@@ -11,6 +11,15 @@ async function copyPackagesToBuild() {
   await fs.ensureDir(buildDir)
   await fs.ensureDir(path.join(buildDir, 'packages'))
 
+  // Copy tsconfig.base.json to build folder
+  const tsconfigSrc = path.join(process.cwd(), 'tsconfig.base.json')
+  const tsconfigDest = path.join(buildDir, 'tsconfig.base.json')
+  try {
+    await fs.copy(tsconfigSrc, tsconfigDest)
+  } catch (err) {
+    console.error(`Error copying tsconfig.base.json: ${err}`)
+  }
+
   // Get all package directories
   const packageDirs = await fs.readdir(packagesDir)
 

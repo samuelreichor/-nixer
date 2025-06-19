@@ -51,3 +51,5 @@ vitest.config.*.timestamp*
 .nuxt
 .nitro
 .cache
+
+build
