@@ -1,7 +1,7 @@
 import { addPlugin, defineNuxtModule, addComponent, createResolver } from '@nuxt/kit'
-import { defaultOptions, type NixerOptions } from '@nixxer/vue'
+import { defaultOptions, type NixxerOptions } from '@nixxer/vue'
 
-export default defineNuxtModule<Required<NixerOptions>>({
+export default defineNuxtModule<Required<NixxerOptions>>({
   meta: {
     name: '@nixxer/nuxt',
     configKey: 'nixer',
