@@ -8,7 +8,9 @@
     "build": "nx run-many -t build",
     "lint": "nx run-many -t lint",
     "test": "nx run-many -t test",
-    "ci": "nx run-many -t build test lint typecheck --projects=@nixer"
+    "ci": "nx run-many -t build test lint typecheck --projects=@nixer",
+    "fix:prettier": "prettier \"**/*.{md,css,yml,yaml}\" \"{packages,playgrounds,tools,common}/**/*.{ts,js,mjs,cjs,mts,cts,jsx,tsx,astro,vue}\" --write",
+    "release": "npx nx run-many --target=build && tsx tools/release.ts"
   },
   "private": true,
   "devDependencies": {
@@ -57,13 +59,11 @@
     "vite-plugin-dts": "~4.5.0",
     "vitest": "^3.0.0",
     "vue": "^3.5.13",
-    "vue-tsc": "^2.2.8"
+    "vue-tsc": "^2.2.8",
+    "vue-router": "^4.5.0"
   },
   "workspaces": [
     "packages/*",
     "playgrounds/*"
-  ],
-  "dependencies": {
-    "vue-router": "^4.5.0"
-  }
+  ]
 }

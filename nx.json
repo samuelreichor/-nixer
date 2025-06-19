@@ -68,6 +68,40 @@
       "dependsOn": [
         "^build"
       ]
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "build/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "projects": ["packages/js", "packages/vue", "packages/nuxt"],
+    "version": {
+      "specifierSource": "conventional-commits",
+      "currentVersionResolver": "git-tag",
+      "manifestRootsToUpdate": [
+        {
+          "path": "build/{projectRoot}",
+          "preserveLocalDependencyProtocols": false
+        }
+      ],
+      "versionActionsOptions": {
+        "skipLockFileUpdate": true
+      }
+    },
+    "changelog": {
+      "projectChangelogs": {
+        "renderOptions": {
+          "authors": false
+        }
+      },
+      "workspaceChangelog": {
+        "createRelease": "github",
+        "renderOptions": {
+          "authors": false
+        }
+      }
     }
   }
 }
