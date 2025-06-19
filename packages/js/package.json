@@ -14,5 +14,10 @@
       "default": "./dist/index.js"
     }
   },
-  "dependencies": {}
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
 }

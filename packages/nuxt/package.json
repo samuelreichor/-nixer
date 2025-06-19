@@ -17,6 +17,16 @@
       "default": "./dist/module.mjs"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@nixxer/js": "*",
+    "@nixxer/vue": "*"
+  },
   "nx": {
     "targets": {
       "build": {
