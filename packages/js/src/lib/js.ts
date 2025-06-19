@@ -1,3 +1,3 @@
-export function js(): string {
-  return 'js';
+export function js(text: string): string {
+  return text;
 }

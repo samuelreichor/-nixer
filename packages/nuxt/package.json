@@ -2,16 +2,26 @@
   "name": "@nixer/nuxt",
   "version": "0.0.1",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "nuxt-module-build build --outDir dist"
+  },
+  "main": "./dist/module.mjs",
+  "module": "./dist/module.mjs",
+  "types": "./dist/module.d.ts",
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "development": "./src/index.ts",
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "default": "./dist/index.js"
+      "development": "./src/module.ts",
+      "types": "./dist/module.d.ts",
+      "import": "./dist/module.mjs",
+      "default": "./dist/module.mjs"
+    }
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "dependsOn": ["^build"]
+      }
     }
   }
 }
