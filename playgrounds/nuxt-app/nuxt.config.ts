@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     plugins: [nxViteTsPaths()],
   },
 
-  modules: ['@nixer/nuxt'],
+  modules: ['@nixxer/nuxt'],
 
   nixer: {
     text: 'Hello World'

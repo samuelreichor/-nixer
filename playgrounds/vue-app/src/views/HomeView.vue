@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NixerJs } from '@nixer/vue';
+  import { NixerJs } from '@nixxer/vue';
 </script>
 
 <template>

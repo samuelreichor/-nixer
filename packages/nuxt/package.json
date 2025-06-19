@@ -1,9 +1,9 @@
 {
-  "name": "@nixer/nuxt",
+  "name": "@nixxer/nuxt",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "prepare": "nx run @nixer/nuxt:prepare",
+    "prepare": "nx run @nixxer/nuxt:prepare",
     "build": "nuxt-module-build build --outDir dist",
     "typecheck": "vue-tsc  --project tsconfig.lib.json"
   },

@@ -1,4 +1,4 @@
-import { Nixer, type NixerOptions } from '@nixer/vue'
+import { Nixer, type NixerOptions } from '@nixxer/vue'
 import { defineNuxtPlugin, useRuntimeConfig } from 'nuxt/app'
 
 export default defineNuxtPlugin((nuxtApp) => {

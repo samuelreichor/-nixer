@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  //import NixerJs from '@nixer/nuxt'
+  //import NixerJs from '@nixxer/nuxt'
 </script>
 
 <template>
