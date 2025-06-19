@@ -22,5 +22,8 @@
   ],
   "dependencies": {
     "@nixxer/js": "*"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.0"
   }
 }

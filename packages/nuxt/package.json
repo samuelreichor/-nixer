@@ -27,6 +27,9 @@
     "@nixxer/js": "*",
     "@nixxer/vue": "*"
   },
+  "peerDependencies": {
+    "nuxt": ">=3.0.0 || 4.x"
+  },
   "nx": {
     "targets": {
       "build": {
