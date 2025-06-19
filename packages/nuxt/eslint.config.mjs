@@ -5,6 +5,11 @@ export default [
   ...baseConfig,
   ...vue.configs['flat/recommended'],
   {
+    ignores: [
+      '.nuxt',
+    ],
+  },
+  {
     files: ['**/*.vue'],
     languageOptions: {
       parserOptions: {
