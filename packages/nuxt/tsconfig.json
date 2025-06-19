@@ -5,6 +5,9 @@
       "path": "../vue"
     },
     {
+      "path": "../js"
+    },
+    {
       "path": "./tsconfig.lib.json"
     },
     {

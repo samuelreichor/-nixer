@@ -42,6 +42,9 @@
   "references": [
     {
       "path": "../vue/tsconfig.lib.json"
+    },
+    {
+      "path": "../js/tsconfig.lib.json"
     }
   ]
 }
