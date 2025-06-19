@@ -11,6 +11,12 @@
     },
     {
       "path": "./packages/nuxt"
+    },
+    {
+      "path": "./playgrounds/vue-app"
+    },
+    {
+      "path": "./playgrounds/nuxt-app"
     }
   ]
 }
