@@ -1,3 +1,10 @@
+## 1.1.1 (2025-06-19)
+
+### 🩹 Fixes
+
+- Fix nuxt tsconfig refs ([b70c1d7](https://github.com/samuelreichor/-nixer/commit/b70c1d7))
+- Fix package.json dependencies ([af7fc4d](https://github.com/samuelreichor/-nixer/commit/af7fc4d))
+
 ## 1.1.0 (2025-06-19)
 
 ### 🚀 Features

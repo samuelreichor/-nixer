@@ -1,3 +1,9 @@
+## 1.1.1 (2025-06-19)
+
+### 🩹 Fixes
+
+- Fix package.json dependencies ([af7fc4d](https://github.com/samuelreichor/-nixer/commit/af7fc4d))
+
 ## 1.1.0 (2025-06-19)
 
 ### 🚀 Features
