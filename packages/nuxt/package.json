@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "prepare": "nuxt-module-build prepare",
+    "prepare": "nx run @nixer/nuxt:prepare",
     "build": "nuxt-module-build build --outDir dist"
   },
   "main": "./dist/module.mjs",
@@ -20,6 +20,14 @@
     "targets": {
       "build": {
         "dependsOn": ["^build"]
+      },
+      "prepare": {
+        "executor": "nx:run-commands",
+        "dependsOn": ["^build"],
+        "options": {
+          "cwd": "packages/nuxt",
+          "command": "nuxt-module-build prepare"
+        }
       }
     }
   }
