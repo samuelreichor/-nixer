@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "clear": "rimraf packages/*/dist packages/*/.nuxt .nx packages/*/node_modules node_modules"
+    "clear": "rimraf packages/*/dist packages/*/.nuxt .nx packages/*/node_modules node_modules",
+    "typecheck": "nx run-many -t typecheck",
+    "build": "nx run-many -t build",
+    "lint": "nx run-many -t lint",
+    "test": "nx run-many -t test",
+    "ci": "nx run-many -t build test lint typecheck --projects=@nixer"
   },
   "private": true,
   "devDependencies": {
